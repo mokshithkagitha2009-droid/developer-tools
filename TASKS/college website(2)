@@ -1,0 +1,403 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ABC College of Excellence</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+/* Navigation */
+header {
+    background: #102b50;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffc857;
+}
+
+/* Banner */
+.banner {
+    min-height: 420px;
+    background: linear-gradient(120deg, #102b50, #1877a5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.banner h1 {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #ffc857;
+    color: #102b50;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Sections */
+section {
+    padding: 55px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #102b50;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* About */
+.about {
+    text-align: center;
+    line-height: 1.8;
+    max-width: 950px;
+    margin: auto;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card h3 {
+    color: #1877a5;
+    margin: 12px 0;
+}
+
+.card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.icon {
+    font-size: 42px;
+}
+
+/* Admissions */
+.admission {
+    background: #e6f1fa;
+    text-align: center;
+    line-height: 2;
+}
+
+/* Events */
+.event {
+    border-left: 4px solid #1877a5;
+    text-align: left;
+}
+
+/* Contact */
+.contact {
+    background: #102b50;
+    color: white;
+    text-align: center;
+    line-height: 2;
+}
+
+.contact h2 {
+    color: #ffc857;
+}
+
+/* Footer */
+footer {
+    background: #091a30;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+
+    section {
+        padding: 40px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+<header>
+    <div class="logo">🎓 ABC COLLEGE</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#departments">Departments</a>
+        <a href="#courses">Courses</a>
+        <a href="#faculty">Faculty</a>
+        <a href="#admission">Admissions</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Banner -->
+<div class="banner" id="home">
+    <h1>Welcome to ABC College of Excellence</h1>
+    <p>Learn Today, Lead Tomorrow – Build Your Bright Future With Us!</p>
+    <a href="#admission" class="btn">Apply for Admission</a>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title">About Our Institution</h2>
+    <div class="about">
+        <p>
+            ABC College of Excellence is dedicated to providing
+            quality education, innovative learning and professional
+            development. Our institution provides a supportive
+            academic environment with experienced faculty,
+            modern laboratories and excellent campus facilities.
+            We prepare students to achieve success in their careers.
+        </p>
+    </div>
+</section>
+
+<!-- Departments -->
+<section id="departments">
+    <h2 class="section-title">Our Departments</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <div class="icon">💻</div>
+            <h3>Computer Science</h3>
+            <p>Programming, Artificial Intelligence and Software Development.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Mechanical Engineering</h3>
+            <p>Design, manufacturing and mechanical technology.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏗️</div>
+            <h3>Civil Engineering</h3>
+            <p>Construction, infrastructure and structural design.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📡</div>
+            <h3>Electronics</h3>
+            <p>Communication systems and electronic technologies.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Courses -->
+<section id="courses">
+    <h2 class="section-title">Popular Courses</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <h3>B.Tech</h3>
+            <p>Computer Science, ECE, Mechanical and Civil Engineering.</p>
+        </div>
+
+        <div class="card">
+            <h3>BBA</h3>
+            <p>Business Administration and Management Studies.</p>
+        </div>
+
+        <div class="card">
+            <h3>B.Sc</h3>
+            <p>Science, Mathematics and Computer Science.</p>
+        </div>
+
+        <div class="card">
+            <h3>MBA</h3>
+            <p>Advanced Business and Management Education.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Faculty -->
+<section id="faculty">
+    <h2 class="section-title">Our Faculty</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Dr. Rajesh Kumar</h3>
+            <p>Professor – Computer Science</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Dr. Priya Sharma</h3>
+            <p>Professor – Electronics</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">👨‍🏫</div>
+            <h3>Mr. Suresh Reddy</h3>
+            <p>Professor – Mechanical Engineering</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Campus Facilities -->
+<section id="facilities">
+    <h2 class="section-title">Campus Facilities</h2>
+    <div class="card-container">
+
+        <div class="card">
+            <div class="icon">📚</div>
+            <h3>Library</h3>
+            <p>Digital library and thousands of academic books.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔬</div>
+            <h3>Laboratories</h3>
+            <p>Modern labs for practical learning and research.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏏</div>
+            <h3>Sports</h3>
+            <p>Indoor and outdoor sports facilities.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🏠</div>
+            <h3>Hostel</h3>
+            <p>Comfortable accommodation for students.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Admissions -->
+<section class="admission" id="admission">
+    <h2 class="section-title">Admissions Open 2026-27</h2>
+    <p>Join ABC College and start your journey towards success.</p>
+    <p>Step 1: Complete the application form.</p>
+    <p>Step 2: Submit academic certificates.</p>
+    <p>Step 3: Attend the admission process.</p>
+    <p>Step 4: Confirm your admission.</p>
+    <br>
+    <a href="#contact" class="btn">Contact for Admission</a>
+</section>
+
+<!-- Events -->
+<section id="events">
+    <h2 class="section-title">College Events</h2>
+    <div class="card-container">
+
+        <div class="card event">
+            <h3>🎉 Annual Day</h3>
+            <p>Celebrating student achievements and talents.</p>
+        </div>
+
+        <div class="card event">
+            <h3>💻 Technical Fest</h3>
+            <p>Technical competitions, coding and innovation.</p>
+        </div>
+
+        <div class="card event">
+            <h3>🎭 Cultural Fest</h3>
+            <p>Music, dance and cultural performances.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>📍 Vijayawada, Andhra Pradesh, India</p>
+    <p>📞 +91 98765 43210</p>
+    <p>✉️ info@abccollege.edu</p>
+    <p>🌐 www.abccollege.edu</p>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 ABC College of Excellence. All Rights Reserved.</p>
+    <p>Designed for Quality Education and Excellence.</p>
+</footer>
+
+</body>
+</html>
